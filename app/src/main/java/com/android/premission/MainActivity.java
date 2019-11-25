@@ -1,8 +1,8 @@
 package com.android.premission;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -10,7 +10,6 @@ import com.android.permission.Action;
 import com.android.permission.AndPermission;
 import com.android.permission.Permission;
 import com.android.permission.dialog.CommonTextDialog;
-import com.android.permission.permission.AlbumRuntimeRationale;
 
 import java.util.List;
 
@@ -33,10 +32,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initPermission() {
-        AndPermission.with(MainActivity.this)
+        AndPermission.with(this)
                 .runtime()
                 .permission(Permission.CAMERA, Permission.RECORD_AUDIO)
-                .rationale(new AlbumRuntimeRationale("需要开启用户权限"))
                 .onGranted(new Action<List<String>>() {
                     @Override
                     public void onAction(List<String> data) {
@@ -63,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
                     }
-                }).start();
+                })
+                .start();
     }
 }

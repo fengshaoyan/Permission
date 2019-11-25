@@ -3,8 +3,8 @@ package com.android.permission.source;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+import android.support.v4.app.Fragment;
 
-import androidx.fragment.app.Fragment;
 
 public class SupportFragmentSource extends Source {
 

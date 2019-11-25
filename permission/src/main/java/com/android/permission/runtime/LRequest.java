@@ -2,6 +2,7 @@ package com.android.permission.runtime;
 
 import android.os.AsyncTask;
 import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.util.Log;
 
 import com.android.permission.Action;
@@ -13,7 +14,6 @@ import com.android.permission.source.Source;
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.annotation.RequiresApi;
 
 import static java.util.Arrays.asList;
 

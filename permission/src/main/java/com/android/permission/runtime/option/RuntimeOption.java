@@ -1,10 +1,11 @@
 package com.android.permission.runtime.option;
 
 
+import android.support.annotation.NonNull;
+
 import com.android.permission.runtime.PermissionRequest;
 import com.android.permission.runtime.setting.SettingRequest;
 
-import androidx.annotation.NonNull;
 
 public interface RuntimeOption {
     /**

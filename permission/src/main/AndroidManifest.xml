@@ -4,9 +4,19 @@
     package="com.android.permission">
 
     <application tools:ignore="GoogleAppIndexingWarning">
+
         <activity
             android:name=".bridge.BridgeActivity"
             android:theme="@style/Permission.Theme" />
+        <receiver android:name=".bridge.Messenger">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.net.Uri;
 import android.os.Build;
+import android.support.v4.app.Fragment;
 
 import com.android.permission.checker.DoubleChecker;
 import com.android.permission.checker.PermissionChecker;
@@ -18,7 +19,6 @@ import com.android.permission.source.SupportFragmentSource;
 import java.io.File;
 import java.util.List;
 
-import androidx.fragment.app.Fragment;
 
 public class AndPermission {
 

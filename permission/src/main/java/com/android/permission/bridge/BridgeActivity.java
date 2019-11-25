@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.support.annotation.NonNull;
 import android.view.KeyEvent;
 
 import com.android.permission.overlay.setting.LSettingPage;
@@ -13,7 +14,6 @@ import com.android.permission.overlay.setting.MSettingPage;
 import com.android.permission.source.ActivitySource;
 import com.android.permission.source.Source;
 
-import androidx.annotation.NonNull;
 
 public class BridgeActivity extends Activity {
 
