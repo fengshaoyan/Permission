@@ -11,7 +11,7 @@
             android:exported="false"
             android:process=":permission"
             android:theme="@style/Permission.Theme" />
-        <receiver android:name=".bridge.Messenger">
+        <!--<receiver android:name=".bridge.Messenger">
             <intent-filter>
                 <action
                     android:name="android.net.conn.CONNECTIVITY_CHANGE"
@@ -19,8 +19,8 @@
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
                 <action android:name="android.net.wifi.STATE_CHANGE" />
             </intent-filter>
-        </receiver>
-        <provider
+        </receiver>-->
+        <!--<provider
             android:name=".FileProvider"
             android:authorities="com.android.premission.file.path.share"
             android:exported="false"
@@ -28,7 +28,7 @@
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/permission_file_paths" />
-        </provider>
+        </provider>-->
     </application>
 
 </manifest>
