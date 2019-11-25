@@ -7,6 +7,9 @@
 
         <activity
             android:name=".bridge.BridgeActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:process=":permission"
             android:theme="@style/Permission.Theme" />
         <receiver android:name=".bridge.Messenger">
             <intent-filter>
@@ -17,6 +20,15 @@
                 <action android:name="android.net.wifi.STATE_CHANGE" />
             </intent-filter>
         </receiver>
+        <provider
+            android:name=".FileProvider"
+            android:authorities="com.android.premission.file.path.share"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/permission_file_paths" />
+        </provider>
     </application>
 
 </manifest>

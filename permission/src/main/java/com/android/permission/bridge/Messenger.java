@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 
 public class Messenger extends BroadcastReceiver {
-    private static final String ACTION = "com.zhy.permissionUtils.bridge";
+    private static final String ACTION = "com.android.premission.bridge";
 
     public static void send(Context context) {
         Intent broadcast = new Intent(ACTION);
